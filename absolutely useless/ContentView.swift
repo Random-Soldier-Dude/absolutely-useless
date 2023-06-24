@@ -8,14 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var start = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            Button {
+                start = true
+            } label: {
+                Text("Start the literally useless app")
+                    .font(.largeTitle)
+                    .background(.black)
+            }
+            .opacity(start ? 0 : 1)
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                Text("Hello, world!")
+            }
+            .padding()
+            .opacity(start ? 1 : 0)
         }
-        .padding()
     }
 }
 
