@@ -19,6 +19,7 @@ struct ContentView: View {
                 Text("Start the literally useless app")
                     .font(.largeTitle)
                     .background(.black)
+                    .cornerRadius(100)
             }
             .opacity(start ? 0 : 1)
             VStack {
