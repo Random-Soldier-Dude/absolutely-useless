@@ -18,15 +18,26 @@ struct ContentView: View {
             } label: {
                 Text("Start the literally useless app")
                     .font(.largeTitle)
+                    .padding()
                     .background(.black)
+                    .foregroundColor(.white)
                     .cornerRadius(100)
             }
             .opacity(start ? 0 : 1)
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("Hello, world!")
+                ZStack {
+                    Image("forest bg.webp")
+                        .resizable()
+                        .font(.system(size:300))
+                    Text("🙋‍♂️")
+                        .font(.system(size: 300))
+                    Text("👋")
+                        .font(.system(size:100))
+                        .offset(x:-130, y:-10)
+                        .rotationEffect(.degrees(45))
+                }
+                .padding()
+                Text("")
             }
             .padding()
             .opacity(start ? 1 : 0)
