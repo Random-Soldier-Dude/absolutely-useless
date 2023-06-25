@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D5121B02A47079F000AE1E6 /* forest bg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1D5121AF2A47079E000AE1E6 /* forest bg.jpeg */; };
 		7056BD4E2A469FD300940D5B /* absolutely_uselessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7056BD4D2A469FD300940D5B /* absolutely_uselessApp.swift */; };
 		7056BD502A469FD300940D5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7056BD4F2A469FD300940D5B /* ContentView.swift */; };
 		7056BD522A469FD500940D5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7056BD512A469FD500940D5B /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D5121AF2A47079E000AE1E6 /* forest bg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "forest bg.jpeg"; path = "../../../../Downloads/forest bg.jpeg"; sourceTree = "<group>"; };
+		1D5121B12A47081E000AE1E6 /* forest bg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "forest bg.jpeg"; sourceTree = "<group>"; };
 		7056BD4A2A469FD300940D5B /* absolutely useless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "absolutely useless.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7056BD4D2A469FD300940D5B /* absolutely_uselessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = absolutely_uselessApp.swift; sourceTree = "<group>"; };
 		7056BD4F2A469FD300940D5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 				7056BD4D2A469FD300940D5B /* absolutely_uselessApp.swift */,
 				7056BD4F2A469FD300940D5B /* ContentView.swift */,
 				7056BD512A469FD500940D5B /* Assets.xcassets */,
+				1D5121B12A47081E000AE1E6 /* forest bg.jpeg */,
 				7056BD532A469FD500940D5B /* Preview Content */,
 			);
 			path = "absolutely useless";
@@ -63,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				7056BD542A469FD500940D5B /* Preview Assets.xcassets */,
+				1D5121AF2A47079E000AE1E6 /* forest bg.jpeg */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 			files = (
 				7056BD552A469FD500940D5B /* Preview Assets.xcassets in Resources */,
 				7056BD522A469FD500940D5B /* Assets.xcassets in Resources */,
+				1D5121B02A47079F000AE1E6 /* forest bg.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
