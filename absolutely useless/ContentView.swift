@@ -16,8 +16,9 @@ struct ContentView: View {
             Button {
                 start = true
             } label: {
-                Text("Start the literally useless app")
-                    .font(.largeTitle)
+                Text("Start the completely useless app")
+                    
+                    .font(.system(size:25))
                     .padding()
                     .background(.black)
                     .foregroundColor(.white)
@@ -28,15 +29,19 @@ struct ContentView: View {
                 ZStack {
                     Image("forest bg")
                         .resizable()
-                        .font(.system(size:300))
+                        .frame(width: 400, height:900)
                     Text("🧞‍♂️")
-                        .font(.system(size: 300))
+                        .font(.system(size: 280))
                         .offset(y:60)
+                    Image(systemName: "bubble.left.fill")
+                        .font(.system(size:190))
+                        .offset(x:45, y:-150)
                     Text("Would you like to\n go on a journey?") //Need to put this into a speech bubble icon
-                        .background(.white)
+//                        .background(.white)
+                        .foregroundColor(.white)
                         .font(.system(size:25))
                         .multilineTextAlignment(.center)
-                        .offset(x: 50, y: -170)
+                        .offset(x: 45, y: -170)
                     
                     //                    Text("🙋‍♂️")
                     //                        .font(.system(size: 300))
