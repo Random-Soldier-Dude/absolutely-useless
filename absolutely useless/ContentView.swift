@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var start = false
+    @State private var start1 = false
     
     var body: some View {
         ZStack {
@@ -17,19 +18,18 @@ struct ContentView: View {
                 start = true
             } label: {
                 Text("Start the completely useless app")
-                    
                     .font(.system(size:25))
                     .padding()
                     .background(.black)
                     .foregroundColor(.white)
                     .cornerRadius(100)
             }
-            .opacity(start ? 0 : 1)
+            .opacity(start ? 0 : (start1 ? 0 : 1))
             VStack {
                 ZStack {
                     Image("forest bg")
                         .resizable()
-                        .frame(width: 400, height:900)
+                        .scaledToFill()
                     Text("🧞‍♂️")
                         .font(.system(size: 280))
                         .offset(y:60)
@@ -51,9 +51,22 @@ struct ContentView: View {
                     //                        .rotationEffect(.degrees(45))
                 }
                 .padding()
+                Button {
+                    start1 = true
+                } label: {
+                    Text("Yes please!")
+                        .font(.system(size:25))
+                        .padding()
+                        .background(.black)
+                        .foregroundColor(.white)
+                        .cornerRadius(100)
+                }
             }
             .padding()
-            .opacity(start ? 1 : 0)
+            .opacity(start ? (start1 ? 0 : 1) : 0)
+            VStack {
+                Text("insert story on line 68 pls")
+            }
         }
     }
 }
